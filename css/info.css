@@ -1,7 +1,7 @@
 .mealInfo img {
     display:inline-block;
-	width: 300px;
-    height: 300px;
+	width: 330px;
+    height: 330px;
     padding-top:0%;
     padding-bottom: 0%;
     margin-right:20px;
@@ -13,6 +13,6 @@
     background: #f4f7f8;
     margin: 10px auto;
     padding: 20px;
-    height: 300px;
+    height: 330px;
     border-radius: 8px;
 }
