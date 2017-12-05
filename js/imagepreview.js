@@ -17,7 +17,6 @@ function handleFileSelect(evt) {
     }
   }
   document.getElementById('files').addEventListener('change', handleFileSelect, false);
-  document.getElementById('files2').addEventListener('change', handleFileSelect, false);
 
   if(localStorage.img1) { 
           $(".img-holder[data-render='1'] div").attr("style","background-image:url("+localStorage.img1+")");

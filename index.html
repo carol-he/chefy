@@ -41,25 +41,26 @@
     </div>
     <div class="row">
         <div class="add-meal-form">
-            <form id="imageUpload" action="/playground/ajax-upload" method="POST">
-                <h5>Upload a picture of your food:</h5>
-                
+            <h5>Upload a picture of your food:</h5>            
             <div class="formline" data-upload="1">
-              <input type="file" id="files" />
+              <div class="uploadButton">
+                choose picture
+                <input type="file" id="files" class="hide_file"/>
+              </div>
             </div>
             <div class="img-holder" data-render="1">
               <div class="list"></div>
             </div>
-            <a class="button">Save</a>
-            </form>
             <form>
             <fieldset>
             <legend><span class="number">1</span> Meal Info</legend>
-            <input type="text" name="field1" placeholder="Meal Name *">
-            Meal Price (USD) *:
+            <label>Meal Name *:</label>
+            <input type="text" name="field1" placeholder="My Yummy Tacos">
+            <label>Meal Price (USD) *:</label>
             <input type="number" name="quantity"
-                min="0" max="999" step="1" value="30">
-            <textarea name="field3" placeholder="Extra Details"></textarea>
+                min="0" max="999" step="1" value="30" prefix="$">
+            <label>Anything else?</label>
+            <textarea name="field3" placeholder="Ingredients, Calorie Count, Vegan/Vegetarian/Gluten-free, Allergy Information, etc."></textarea>
             <label for="job">Cuisine:</label>
             <select id="job" name="field4">
               <option value="">--</option>
@@ -81,7 +82,9 @@
             <input type="radio" name="gender" value="male"> Yes<br>
             <input type="radio" name="gender" value="female"> No<br>
             <label>If yes, where?</label>
-            <textarea name="field3" placeholder="Where is this deliverable"></textarea>
+            <textarea name="field3" placeholder="Please enter address and radius of delivery (miles)"></textarea>
+            <label>If no, where should it be picked up?</label>
+            <textarea name="field3" placeholder="Please enter address"></textarea>
             </fieldset>
                 <input id="postMealButton" type="submit" value="Post your meal!" onclick="return redirect()"/>
             </form>
@@ -89,11 +92,10 @@
     </div>
   </div>
 <script src="/js/jquery-3.2.1.min.js" type="text/javascript"></script>
-<script src="/js/ajaxupload.js" type="text/javascript"></script>
 <script src="/js/imagepreview.js" type="text/javascript"></script>
 <script type="text/javascript" language="javascript">
     function redirect() {
-      window.location.replace("alldishes.html");
+      window.location.replace("/dishes");
       return false;
     }
 </script>
