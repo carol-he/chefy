@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Post a Meal to Chefy</title>
+  <title>Chefy - Available Meals!</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -21,6 +21,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/grid.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -34,13 +35,35 @@
   <div class="container">
     <div class="row">
       <div class="one-half column" style="margin-top: 5%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+        <h4>Available Meals!</h4>
+        <p>Here are all the meals currently available for purchase:</p>
       </div>
     </div>
+    <div id="mealGrid">
+        <div class="row">
+          <div class="three columns"><div class="meal"><img src="img/brownies.jpg"></div></div>
+          <div class="three columns"><div class="meal"><img src="img/chicken%20sandwich.jpg"></div></div>
+          <div class="three columns"><div class="meal"><img src="img/vegetarian%20samosa.jpg"></div></div>
+          <div class="three columns"><div class="meal"><img src="img/fluffy%20pancakes.jpg"></div></div>
+        </div>
+        <div class="row">
+          <div class="three columns"><div class="meal"><img src="img/tomato%20pasta.jpg"></div></div>
+          <div class="three columns"><div class="meal"><img src="img/healthypizza.jpg"></div></div>
+          <div class="three columns"><div class="meal"><img src="img/smorebars.jpg"></div></div>
+          <div class="three columns"><div class="meal"><img src="img/soupdumplings.jpeg"></div></div>
+        </div>
+        <div class="row">
+          <div class="three columns"><div class="meal"><img src="img/beefbulgogibowl.png"></div></div>
+          <div class="three columns"><div class="meal"><img src="img/twocheeseveggienachos.jpg"></div></div>    
+          <div class="three columns"><div class="meal"><img src="img/flan.jpg"></div></div>
+          <div class="three columns"><div class="meal"><img src="img/chickyparm.jpg"></div></div>
+        </div>
+    </div>
+    
   </div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="/js/jquery-3.2.1.min.js" type="text/javascript"></script>
 </body>
 </html>

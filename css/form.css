@@ -1,4 +1,4 @@
-.form-style-5{
+.add-meal-form{
     max-width: 100%;
     padding: 10px 20px;
     background: #f4f7f8;
@@ -8,27 +8,27 @@
     border-radius: 8px;
     font-family: Georgia, "Times New Roman", Times, serif;
 }
-.form-style-5 fieldset{
+.add-meal-form fieldset{
     border: none;
 }
-.form-style-5 legend {
+.add-meal-form legend {
     font-size: 1.4em;
     margin-bottom: 10px;
 }
-.form-style-5 label {
+.add-meal-form label {
     display: block;
     margin-bottom: 8px;
 }
-.form-style-5 input[type="text"],
-.form-style-5 input[type="date"],
-.form-style-5 input[type="datetime"],
-.form-style-5 input[type="email"],
-.form-style-5 input[type="number"],
-.form-style-5 input[type="search"],
-.form-style-5 input[type="time"],
-.form-style-5 input[type="url"],
-.form-style-5 textarea,
-.form-style-5 select {
+.add-meal-form input[type="text"],
+.add-meal-form input[type="date"],
+.add-meal-form input[type="datetime"],
+.add-meal-form input[type="email"],
+.add-meal-form input[type="number"],
+.add-meal-form input[type="search"],
+.add-meal-form input[type="time"],
+.add-meal-form input[type="url"],
+.add-meal-form textarea,
+.add-meal-form select {
     font-family: Georgia, "Times New Roman", Times, serif;
     background: rgba(255,255,255,.1);
     border: none;
@@ -48,23 +48,23 @@
     margin-bottom: 30px;
     
 }
-.form-style-5 input[type="text"]:focus,
-.form-style-5 input[type="date"]:focus,
-.form-style-5 input[type="datetime"]:focus,
-.form-style-5 input[type="email"]:focus,
-.form-style-5 input[type="number"]:focus,
-.form-style-5 input[type="search"]:focus,
-.form-style-5 input[type="time"]:focus,
-.form-style-5 input[type="url"]:focus,
-.form-style-5 textarea:focus,
-.form-style-5 select:focus{
+.add-meal-form input[type="text"]:focus,
+.add-meal-form input[type="date"]:focus,
+.add-meal-form input[type="datetime"]:focus,
+.add-meal-form input[type="email"]:focus,
+.add-meal-form input[type="number"]:focus,
+.add-meal-form input[type="search"]:focus,
+.add-meal-form input[type="time"]:focus,
+.add-meal-form input[type="url"]:focus,
+.add-meal-form textarea:focus,
+.add-meal-form select:focus{
     background: #d2d9dd;
 }
-.form-style-5 select{
+.add-meal-form select{
     -webkit-appearance: menulist-button;
     height:35px;
 }
-.form-style-5 .number {
+.add-meal-form .number {
     background: #1abc9c;
     color: #fff;
     height: 30px;
@@ -78,8 +78,8 @@
     border-radius: 15px 15px 15px 0px;
 }
 
-.form-style-5 input[type="submit"],
-.form-style-5 input[type="button"]
+.add-meal-form input[type="submit"],
+.add-meal-form input[type="button"]
 {
     position: relative;
     display: block;
@@ -95,8 +95,8 @@
     border-width: 1px 1px 3px;
     margin-bottom: 10px;
 }
-.form-style-5 input[type="submit"]:hover,
-.form-style-5 input[type="button"]:hover
+.add-meal-form input[type="submit"]:hover,
+.add-meal-form input[type="button"]:hover
 {
     background: #109177;
 }

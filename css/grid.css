@@ -1,0 +1,12 @@
+.meal{
+    display:inline-block;
+    background-color: lightgrey;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.meal img {
+    display:inline-block;
+	width:100%;
+    padding-top:0%;
+    padding-bottom: 0%;
+}
