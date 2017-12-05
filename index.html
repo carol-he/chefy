@@ -83,7 +83,7 @@
             <label>If yes, where?</label>
             <textarea name="field3" placeholder="Where is this deliverable"></textarea>
             </fieldset>
-            <input id="postMealButton" type="submit" value="Post your meal!" />
+                <input id="postMealButton" type="submit" value="Post your meal!" onclick="return redirect()"/>
             </form>
         </div>
     </div>
@@ -91,15 +91,11 @@
 <script src="/js/jquery-3.2.1.min.js" type="text/javascript"></script>
 <script src="/js/ajaxupload.js" type="text/javascript"></script>
 <script src="/js/imagepreview.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(function() {
-  $('form').submit(function(){
-    $.post('/alldishes.html', function() {
-      //window.location = 'http://google.com';
-    });
-    return false;
-  });
-});
+<script type="text/javascript" language="javascript">
+    function redirect() {
+      window.location.replace("alldishes.html");
+      return false;
+    }
 </script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

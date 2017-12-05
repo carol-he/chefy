@@ -1,8 +1,9 @@
 .meal{
     display:inline-block;
-    background-color: lightgrey;
+    background-color: #57c1b0;
+    color:white;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .meal img {
     display:inline-block;
