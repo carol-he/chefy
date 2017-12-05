@@ -3,11 +3,45 @@
     background-color: #57c1b0;
     color:white;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 7px;
 }
 .meal img {
     display:inline-block;
 	width:100%;
     padding-top:0%;
     padding-bottom: 0%;
+}
+
+.meal {
+  position: relative;
+  display: inline-block;
+  background-color: #57c1b0;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.meal::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.meal:hover {
+}
+
+.meal:hover::after {
+    opacity: 1;
 }
